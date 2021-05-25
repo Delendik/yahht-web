@@ -14,18 +14,31 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
+
 footer {
+  width: 80vw;
   position: absolute;
   text-align: center;
 }
 
 .content {
   width: 80vw;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .products {
   margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .link {
@@ -42,8 +55,12 @@ footer {
 }
 
 .dot {
+  font-size: 20px;
+  line-height: 25px;
   color: var(--ground-300);
-  margin: 0;
+  margin-left: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
