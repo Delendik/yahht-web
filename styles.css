@@ -1,0 +1,62 @@
+:root {
+  --air: #F8FBFF;
+  --polar: #E7FAF9;
+  --deep: #0D3455;
+  --accent: #E83755;
+  --ground-500: #3C4B5A;
+  --ground-400: #535B64;
+  --ground-300: #919AA3;
+}
+
+body {
+  margin: 0 auto;
+  background: var(--air);
+  font-family: 'DM Sans', sans-serif;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+}
+
+.content {
+  width: 80vw;
+  text-align: center;
+}
+
+.products {
+  margin-top: 50px;
+}
+
+.link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--ground-500);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+.dot {
+  color: var(--ground-300);
+  margin: 0;
+  padding: 0;
+}
+
+.mail {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--ground-400);
+  text-decoration: none;
+}
+
+.mail:hover {
+  color: var(--accent);
+}
