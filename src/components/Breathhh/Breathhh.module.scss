@@ -1,0 +1,184 @@
+@import '../../styles/_variables';
+
+.breathhh__main {
+  max-width: 2560px;
+  width: 100%;
+  padding-left: 190px;
+  background-color: #ffffff;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -40px;
+
+  @include mediaMaxL {
+    padding: 0;
+  }
+
+  @include mediaMaxXS {
+    border-radius: 34px 34px 0px 0px;
+  }
+}
+.breathhh__container {
+  max-width: 1920px;
+  height: 900px;
+  display: flex;
+  margin: 68px auto 0;
+
+  @include mediaMaxL {
+    max-width: 1120px;
+    height: 700px;
+    margin: 50px auto 0;
+  }
+
+  @include mediaMaxM {
+    max-width: 864px;
+    height: 1100px;
+    margin: 50px auto 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mediaMaxXS {
+    max-width: 330px;
+    height: 670px;
+    margin: 16px auto 0;
+  }
+}
+
+.breathhh__about {
+  color: #000000;
+
+  @include mediaMaxM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.breathhh__title {
+  margin-top: 188px;
+  font-weight: 600;
+  font-size: 94px;
+  line-height: 90px;
+  letter-spacing: -0.01em;
+
+  @include mediaMaxL {
+    margin-top: 120px;
+    font-size: 82px;
+  }
+
+  @include mediaMaxM {
+    margin-top: 96px;
+    font-size: 100px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  @include mediaMaxXS {
+    margin-top: 48px;
+    font-size: 34px;
+  }
+}
+
+.breathhh__subtitle {
+  margin-top: 34px;
+  width: 760px;
+  font-size: 34px;
+  line-height: 46px;
+  letter-spacing: -0.01em;
+
+  @include mediaMaxL {
+    width: 551px;
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  @include mediaMaxM {
+    width: 864px;
+    margin-top: 18px;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  @include mediaMaxXS {
+    width: 328px;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+}
+
+.breathhh__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 79px;
+  margin-top: 48px;
+  background: #000000;
+  border-radius: 50px;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+
+  @include mediaMaxL {
+    width: 236px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  @include mediaMaxXS {
+    width: 166px;
+    height: 58px;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.breathhh__buttonPicture {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+
+  @include mediaMaxL {
+    width: 19px;
+    height: 19px;
+    margin-left: 12px;
+  }
+
+  @include mediaMaxXS {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+  }
+}
+
+.breathhh__picture {
+  width: 615px;
+  height: 615px;
+  margin-left: 93px;
+  margin-top: 123px;
+
+  @include mediaMaxL {
+    width: 451px;
+    height: 451px;
+    margin-left: 67px;
+    margin-top: 105px;
+  }
+
+  @include mediaMaxM {
+    width: 443px;
+    height: 443px;
+    margin: 83px 0 0;
+  }
+
+  @include mediaMaxXS {
+    width: 272px;
+    height: 272px;
+    margin-top: 58px;
+  }
+}

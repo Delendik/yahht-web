@@ -1,0 +1,190 @@
+@import '../../styles/_variables';
+
+.lassie__main {
+  max-width: 2560px;
+  width: 100%;
+  padding-left: 190px;
+  background-color: #070918;
+  border-radius: 40px 40px 0px 0px;
+  margin-top: -40px;
+
+  @include mediaMaxL {
+    padding: 0;
+  }
+
+  @include mediaMaxXS {
+    border-radius: 34px 34px 0px 0px;
+  }
+}
+.lassie__container {
+  max-width: 1920px;
+  height: 900px;
+  display: flex;
+  margin: 68px auto 0;
+
+  @include mediaMaxL {
+    max-width: 1120px;
+    height: 700px;
+    margin: 50px auto 0;
+  }
+
+  @include mediaMaxM {
+    max-width: 864px;
+    height: 1100px;
+    margin: 50px auto 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mediaMaxXS {
+    max-width: 330px;
+    height: 670px;
+    margin: 16px auto 0;
+  }
+}
+
+.lassie__about {
+  color: #ffffff;
+
+  @include mediaMaxM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lassie__title {
+  margin-top: 188px;
+  font-weight: 600;
+  font-size: 94px;
+  line-height: 90px;
+  letter-spacing: -0.01em;
+
+  @include mediaMaxL {
+    margin-top: 120px;
+    font-size: 82px;
+  }
+
+  @include mediaMaxM {
+    margin-top: 96px;
+    font-size: 100px;
+    line-height: 120%;
+    text-align: center;
+  }
+
+  @include mediaMaxXS {
+    margin-top: 48px;
+    font-size: 34px;
+  }
+}
+
+.lassie__subtitle {
+  margin-top: 34px;
+  width: 760px;
+  font-size: 34px;
+  line-height: 46px;
+  letter-spacing: -0.01em;
+
+  @include mediaMaxL {
+    width: 551px;
+    margin-top: 24px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  @include mediaMaxM {
+    width: 864px;
+    margin-top: 18px;
+    font-size: 28px;
+    line-height: 140%;
+    text-align: center;
+  }
+
+  @include mediaMaxXS {
+    width: 328px;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+}
+
+.lassie__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 260px;
+  height: 79px;
+  margin-top: 48px;
+  background: #e300ff;
+  border-radius: 50px;
+  font-size: 28px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #070918;
+
+  @include mediaMaxL {
+    width: 236px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  @include mediaMaxXS {
+    width: 166px;
+    height: 58px;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.75;
+  }
+}
+
+.lassie__buttonPicture {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+
+  @include mediaMaxL {
+    width: 19px;
+    height: 19px;
+    margin-left: 12px;
+  }
+
+  @include mediaMaxXS {
+    width: 12px;
+    height: 12px;
+    margin-left: 10px;
+  }
+}
+
+.lassie__picture {
+  width: 761px;
+  height: 792px;
+  margin-left: 65px;
+  margin-top: 68px;
+  background-image: url('../../../public/illustrate-lassie-smoke@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mediaMaxL {
+    width: 550px;
+    height: 597px;
+    margin-left: 20px;
+    margin-top: 63px;
+  }
+
+  @include mediaMaxM {
+    background-image: url('../../../public/illustrate-lassie-smoke.png');
+    width: 653px;
+    height: 522px;
+    margin-top: 48px;
+  }
+
+  @include mediaMaxXS {
+    background-image: url('../../../public/illustrate-lassie-smoke-small.png');
+    width: 360px;
+    height: 364px;
+    margin-top: 5px;
+  }
+}

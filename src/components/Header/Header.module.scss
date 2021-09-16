@@ -1,0 +1,226 @@
+@import '../../styles/_variables';
+
+.header__main {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.header__container {
+  max-width: 1920px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 68px 190px 0;
+
+  @include mediaMaxL {
+    max-width: 1120px;
+    height: 640px;
+    margin: 50px auto 0;
+  }
+
+  @include mediaMaxM {
+    max-width: 864px;
+    height: 700px;
+    margin: 50px auto 0;
+  }
+
+  @include mediaMaxXS {
+    max-width: 330px;
+    height: 480px;
+    margin: 16px auto 0;
+  }
+}
+
+.header__head {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mediaMaxL {
+    height: 32px;
+  }
+
+  @include mediaMaxXS {
+    height: 28px;
+  }
+}
+
+.header__picture {
+  width: 180px;
+  height: 45px;
+
+  @include mediaMaxL {
+    width: 128px;
+    height: 32px;
+  }
+
+  @include mediaMaxXS {
+    width: 114px;
+    height: 28px;
+  }
+}
+
+.header__button {
+  width: 138px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 25px;
+  text-decoration: none;
+  color: inherit;
+
+  @include mediaMaxL {
+    width: 96px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: #e83755;
+  }
+}
+
+.header__avatars {
+  display: flex;
+  margin-top: 248px;
+
+  @include mediaMaxL {
+    margin-top: 161px;
+  }
+
+  @include mediaMaxM {
+    margin-top: 190px;
+  }
+
+  @include mediaMaxXS {
+    margin-top: 96px;
+    justify-content: center;
+  }
+}
+
+.header__avatar {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #e7faf9;
+  border-radius: 65.1429px;
+  margin-left: -20px;
+
+  @include mediaMaxXS {
+    width: 40px;
+    height: 40px;
+    margin-left: -15px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.header__link {
+  display: flex;
+  align-items: flex-end;
+  width: 1200px;
+  margin-top: 40px;
+  font-size: 68px;
+  line-height: 82px;
+  letter-spacing: -1px;
+  color: inherit;
+  text-decoration: none;
+
+  @include mediaMaxL {
+    width: 100%;
+    margin-top: 35px;
+    font-size: 47px;
+    line-height: 56px;
+  }
+
+  @include mediaMaxM {
+    margin-top: 40px;
+  }
+
+  @include mediaMaxXS {
+    justify-content: center;
+    text-align: center;
+    max-width: 323px;
+    margin-top: 18px;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    br {
+      display: none;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: #e83755;
+  }
+  &:hover .header__linkIcon {
+    background-image: url(../../../public/icon-hover.svg);
+  }
+}
+
+.header__linkIcon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  background: url(../../../public/icon.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  @include mediaMaxL {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  @include mediaMaxXS {
+    position: absolute;
+    right: 40px;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 8px;
+  }
+}
+
+.header__hashtags {
+  display: flex;
+  margin-top: 48px;
+
+  @include mediaMaxL {
+    margin-top: 40px;
+  }
+
+  @include mediaMaxM {
+    margin-top: 34px;
+  }
+
+  @include mediaMaxXS {
+    justify-content: center;
+    margin-top: 24px;
+  }
+}
+
+.header__hashtag {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 25px;
+  margin-left: 34px;
+
+  @include mediaMaxL {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  @include mediaMaxXS {
+    font-size: 16px;
+    margin-left: 18px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
