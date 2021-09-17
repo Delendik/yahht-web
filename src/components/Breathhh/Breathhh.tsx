@@ -1,6 +1,10 @@
 import styles from './Breathhh.module.scss'
 
-export default function Breathhh() {
+interface BreathhhProps {
+  click: () => void
+}
+
+const Breathhh: React.FC<BreathhhProps> = ({ click }) => {
   return (
     <div className={styles.breathhh__main}>
       <div className={styles.breathhh__container}>
@@ -10,11 +14,7 @@ export default function Breathhh() {
             A neural network to keep a cool head
             <br /> and reduce stress during the day
           </p>
-          <form
-            className={styles.breathhh__button}
-            action="https://m.me/lassiesmoke"
-            target="_blank"
-          >
+          <form className={styles.breathhh__button} onClick={click}>
             Try the beta
             <img
               className={styles.breathhh__buttonPicture}
@@ -37,3 +37,5 @@ export default function Breathhh() {
     </div>
   )
 }
+
+export default Breathhh

@@ -60,6 +60,10 @@
     width: 114px;
     height: 28px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .header__button {

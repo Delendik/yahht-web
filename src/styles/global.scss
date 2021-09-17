@@ -12,10 +12,6 @@ body {
   p {
     margin: 0;
     padding: 0;
-
-    // &::selection {
-    //   background-color: rgba(213, 228, 247, 0.1);
-    // }
   }
 
   h1,
@@ -23,27 +19,11 @@ body {
     font-weight: normal;
     margin: 0;
     padding: 0;
-
-    // &::selection {
-    //   background-color: rgba(213, 228, 247, 0.1);
-    // }
   }
 
   button {
     border: none;
     padding: 0;
     outline: none;
-
-    // &::selection {
-    //   background-color: rgba(213, 228, 247, 0.1);
-    // }
   }
-
-  // img,
-  // a,
-  // br {
-  //   &::selection {
-  //     background-color: rgba(213, 228, 247, 0.1);
-  //   }
-  // }
 }
