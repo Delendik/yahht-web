@@ -1,0 +1,171 @@
+@import '../../styles/_variables';
+
+.popup__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $primary-color;
+  opacity: 1;
+}
+
+.popup__hide {
+  display: none;
+}
+
+.popup__popup {
+  position: fixed;
+  width: 550px;
+  height: 450px;
+  top: 50%;
+  margin-top: -225px;
+  left: 50%;
+  margin-left: -275px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+
+  @include mediaMaxXS {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+  }
+}
+
+.popup__popupSuccess {
+  position: fixed;
+  width: 550px;
+  height: 340px;
+  top: 50%;
+  margin-top: -170px;
+  left: 50%;
+  margin-left: -275px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000000;
+
+  @include mediaMaxXS {
+    width: 300px;
+    height: 230px;
+    margin-top: -115px;
+    margin-left: -150px;
+  }
+}
+
+.popup__title {
+  margin-top: 45px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -1px;
+
+  @include mediaMaxXS {
+    margin-top: 25px;
+    font-size: 26px;
+  }
+}
+
+.popup__subtitle {
+  width: 330px;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.7;
+
+  @include mediaMaxXS {
+    width: 260px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+.popup__input {
+  width: 330px;
+  height: 57px;
+  margin-top: 34px;
+  background: #f1f1f1;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.45;
+
+  @include mediaMaxXS {
+    width: 260px;
+    margin-top: 15px;
+    font-size: 14px;
+  }
+}
+
+.lassie__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 59px;
+  width: 240px;
+  height: 70px;
+  background: #000000;
+  border-radius: 50px;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+
+  @include mediaMaxXS {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.lassie__buttonSuccess {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 59px;
+  width: 126px;
+  height: 70px;
+  background: #000000;
+  border-radius: 50px;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+
+  @include mediaMaxXS {
+    height: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.popup__close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 34px;
+  right: 34px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

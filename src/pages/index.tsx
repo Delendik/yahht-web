@@ -1,12 +1,26 @@
 import { YMInitializer } from 'react-yandex-metrika'
+import { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Breathhh from '../components/Breathhh/Breathhh'
 import Lassie from '../components/Lassie/Lassie'
 import Footer from '../components/Footer/Footer'
 import styles from '../styles/index.module.scss'
+import Popup from '../components/Popup/Popup'
 
 function Home() {
+  const [show, setShow] = useState(false)
+  const [success, setSuccess] = useState(false)
+  const handleClick = () => {
+    setShow(!show)
+    setSuccess(false)
+  }
+
+  const handleClickSuccess = () => {
+    setSuccess(!success)
+    setShow(true)
+  }
+
   return (
     <div className={styles.page}>
       <YMInitializer accounts={[79520590]} />
@@ -32,9 +46,10 @@ function Home() {
         <meta property="og:url" content="https://yahht.com/" />
       </Head>
       <Header />
-      <Breathhh />
+      <Breathhh click={handleClick} />
       <Lassie />
-      <Footer />
+      <Footer click={handleClick} />
+      <Popup success={success} show={show} click={handleClick} clickSuccess={handleClickSuccess} />
     </div>
   )
 }

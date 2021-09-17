@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Card from '../Card/Card'
 import Icon from '../Icon/Icon'
 import styles from './Team.module.scss'
