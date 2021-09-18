@@ -11,7 +11,7 @@ export default function Lassie() {
             <br />
             and quit the bad habit in 14-17 days
           </p>
-          <form action="https://m.me/lassiesmoke" target="_blank">
+          <form action="https://lassie.yahht.com/" target="_blank">
             <button className={styles.lassie__button}>
               How it works
               <img

@@ -1,4 +1,6 @@
 import cnBind from 'classnames/bind'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 import styles from './Popup.module.scss'
 
 const cx = cnBind.bind(styles)
@@ -11,6 +13,13 @@ interface PopupProps {
 }
 
 const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => {
+  const [value, setValue] = useState('')
+
+  const handleSubmit = () => {
+    clickSuccess()
+    axios.post('https://api.breathhh.app/beta_requests ', value).then((res) => console.log(res))
+  }
+
   let showPopup = cx('popup__container', {
     popup__hide: !show,
   })
@@ -23,9 +32,17 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
           <p className={styles.popup__subtitle}>
             A neural network to keep a cool head and reduce stress during the day
           </p>
-          <input type="email" className={styles.popup__input} placeholder="Email"></input>
+          <input
+            type="email"
+            className={styles.popup__input}
+            placeholder="Email"
+            value={value}
+            onChange={(e) => {
+              setValue(e.currentTarget.value)
+            }}
+          ></input>
           <form action="">
-            <button type="button" className={styles.lassie__button} onClick={clickSuccess}>
+            <button type="button" className={styles.lassie__button} onClick={handleSubmit}>
               Submit request
             </button>
           </form>
