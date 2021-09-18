@@ -22,8 +22,8 @@ export default function Team() {
             <div className={styles.team__icons}>
               <Icon picture={'/telegram.svg'} link={'https://t.me/kshirshov'} />
               <Icon picture={'/facebook.svg'} link={'https://www.facebook.com/shirshov.pro'} />
-              <Icon picture={'/angel.svg'} link={''} />
-              <Icon picture={'/linkedin.svg'} link={''} />
+              <Icon picture={'/angel.svg'} link={'https://angel.co/u/shirshov'} />
+              <Icon picture={'/linkedin.svg'} link={'https://www.linkedin.com/in/shirshov'} />
             </div>
           </div>
           <div className={styles.team__member}>
@@ -38,7 +38,10 @@ export default function Team() {
                 picture={'/facebook.svg'}
                 link={'https://www.facebook.com/profile.php?id=100001789163215'}
               />
-              <Icon picture={'/linkedin.svg'} link={''} />
+              <Icon
+                picture={'/linkedin.svg'}
+                link={'https://www.linkedin.com/in/sergey-elushev-909724aa/'}
+              />
             </div>
           </div>
           <div className={styles.team__member}>
@@ -130,12 +133,16 @@ export default function Team() {
             <Card
               picture={'/photos/pavel.png'}
               picture2={'/photos/pavel@2x.png'}
-              name={'Pavel Mityuhin'}
+              name={'Paul Mit'}
               description={'Advising'}
             />
             <div className={styles.team__icons}>
-              <Icon picture={'/telegram.svg'} link={''} />
-              <Icon picture={'/facebook.svg'} link={''} />
+              <Icon picture={'/telegram.svg'} link={'https://t.me/PavelMitu'} />
+              <Icon picture={'/facebook.svg'} link={'https://www.facebook.com/pavel.mityukhin'} />
+              <Icon
+                picture={'/linkedin.svg'}
+                link={'https://www.linkedin.com/in/pavelmityukhin/'}
+              />
             </div>
           </div>
         </div>

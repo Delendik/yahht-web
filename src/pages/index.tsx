@@ -34,7 +34,7 @@ function Home() {
           name="keywords"
           content="Yahht, Breathhh, Lassie Smoke, Alpaca, Tabula Rasa, Slang Shuffle, Weather forecast"
         />
-        <link rel="icon" href="/favicon.ico" sizes="192x192" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Head>
         <meta property="og:locale" content="en_GB" />
