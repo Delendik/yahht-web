@@ -18,7 +18,6 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
   const handleSubmit = () => {
     clickSuccess()
     const article = { email: value }
-    console.log(article)
     axios
       .post('https://api.breathhh.app/beta_requests ', article)
       .then((res) => console.log('result: ', res))
@@ -39,14 +38,17 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
           <input
             type="email"
             className={styles.popup__input}
+            id="input"
             placeholder="Email"
             value={value}
+            required
             onChange={(e) => {
               setValue(e.currentTarget.value)
             }}
           ></input>
+          <label className={styles.popup__label}>Input email</label>
           <form action="">
-            <button type="button" className={styles.lassie__button} onClick={handleSubmit}>
+            <button type="submit" className={styles.lassie__button} onClick={handleSubmit}>
               Submit request
             </button>
           </form>
