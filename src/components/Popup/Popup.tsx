@@ -17,7 +17,8 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
 
   const handleSubmit = () => {
     clickSuccess()
-    axios.post('https://api.breathhh.app/beta_requests ', value).then((res) => console.log(res))
+    const article = { email: value }
+    axios.post('https://api.breathhh.app/beta_requests ', article).then((res) => console.log(res))
   }
 
   let showPopup = cx('popup__container', {
