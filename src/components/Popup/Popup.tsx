@@ -19,7 +19,7 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
     clickSuccess()
     const article = { email: value }
     axios
-      .post('https://api.breathhh.app/beta_requests ', value)
+      .post('https://api.breathhh.app/beta_requests ', article)
       .then((res) => console.log('result: ', res))
   }
 
