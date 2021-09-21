@@ -64,9 +64,21 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
           ></input>
           {error && <label className={styles.popup__label}>{error}</label>}
           <form action="">
-            <button type="submit" className={styles.lassie__button} onClick={handleSubmit}>
-              Submit request
-            </button>
+            {!valid && (
+              <button
+                type="submit"
+                className={styles.lassie__button}
+                onClick={handleSubmit}
+                disabled
+              >
+                Submit request
+              </button>
+            )}
+            {valid && (
+              <button type="submit" className={styles.lassie__button} onClick={handleSubmit}>
+                Submit request
+              </button>
+            )}
           </form>
           <button type="button" onClick={click}>
             <img
