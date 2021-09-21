@@ -42,7 +42,7 @@ function Home() {
         <meta property="og:title" content="Yahht" />
         <meta property="og:image" content="meta-img.png" />
         <meta property="og:site_name" content="Yahht" />
-        <meta property="og:image" content="https://lassie.yahht.com/opengraph.png" />
+        <meta property="og:image" content="https://yahht-web.vercel.app/opengraph.png" />
         <meta property="og:url" content="https://yahht.com/" />
       </Head>
       <Header />
