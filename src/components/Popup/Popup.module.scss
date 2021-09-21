@@ -88,7 +88,6 @@
 }
 
 .popup__label {
-  display: none;
   margin-left: 110px;
   align-self: flex-start;
   font-weight: 400;
@@ -116,14 +115,10 @@
     margin-top: 15px;
     font-size: 14px;
   }
+}
 
-  &:valid {
-    color: #000000;
-  }
-
-  &:invalid {
-    color: #e83755;
-  }
+.popup__invalid {
+  color: #e83755;
 }
 
 .lassie__button {

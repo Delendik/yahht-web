@@ -1,5 +1,5 @@
 import cnBind from 'classnames/bind'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import axios from 'axios'
 import styles from './Popup.module.scss'
 
@@ -14,6 +14,8 @@ interface PopupProps {
 
 const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => {
   const [value, setValue] = useState('')
+  const [error, setError] = useState('Input email')
+  const [valid, setValid] = useState(false)
 
   const handleSubmit = () => {
     clickSuccess()
@@ -27,6 +29,22 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
     popup__hide: !show,
   })
 
+  let showError = cx('popup__input', {
+    popup__invalid: !valid,
+  })
+
+  const handleChange = (e) => {
+    setValue(e.currentTarget.value)
+    const re =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    if (!re.test(String(e.currentTarget.value).toLowerCase())) {
+      setError('Incorrect email')
+      setValid(false)
+    } else {
+      setError('')
+      setValid(true)
+    }
+  }
   return (
     <div className={showPopup}>
       {!success && (
@@ -37,16 +55,14 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
           </p>
           <input
             type="email"
-            className={styles.popup__input}
+            className={showError}
             id="input"
             placeholder="Email"
             value={value}
             required
-            onChange={(e) => {
-              setValue(e.currentTarget.value)
-            }}
+            onChange={(e) => handleChange(e)}
           ></input>
-          <label className={styles.popup__label}>Input email</label>
+          {error && <label className={styles.popup__label}>{error}</label>}
           <form action="">
             <button type="submit" className={styles.lassie__button} onClick={handleSubmit}>
               Submit request
