@@ -36,6 +36,8 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
   })
 
   const handleChange = (e) => {
+    setValid(true)
+    setError('')
     setValue(e.currentTarget.value)
   }
 
