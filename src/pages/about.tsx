@@ -21,22 +21,33 @@ function About() {
   return (
     <div className={styles.page}>
       <div className={styles.about__container}>
-        <div className={styles.header__head}>
-          <Link href="/">
-            <img
-              className={styles.header__picture}
-              width="180"
-              height="45"
-              alt="yahht logo"
-              src="/logotype-yahht.svg"
-            />
-          </Link>
-          <a className={styles.header__button} href="mailto:mail@yahht.com">
-            Contact Us
-          </a>
-        </div>
+        <Link href="/">
+          <img
+            className={styles.header__picture}
+            width="180"
+            height="45"
+            alt="yahht logo"
+            src="/logotype-yahht.svg"
+          />
+        </Link>
+        <a className={styles.header__button} href="mailto:mail@yahht.com">
+          Contact Us
+        </a>
       </div>
       <Team />
+      <div className={styles.about__buttonContainer}>
+        <p className={styles.about__buttonText}>Let’s do great things together!</p>
+        <a className={styles.about__button} href="mailto:mail@yahht.com">
+          Join the team
+          <img
+            className={styles.about__buttonPicture}
+            width="20"
+            height="20"
+            alt="arrow"
+            src="/icon-arrow.svg"
+          />
+        </a>
+      </div>
       <Footer click={handleClick} />
       <Popup success={success} show={show} click={handleClick} clickSuccess={handleClickSuccess} />
     </div>
