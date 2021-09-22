@@ -8,8 +8,9 @@ export default function Team() {
       <div className={styles.team__container}>
         <p className={styles.team__title}>Team</p>
         <p className={styles.team__subtitle}>
-          A neural network to keep a cool head
-          <br /> and reduce stress during the day
+          We are committed to creating and supporting products that help you take care of yourself.
+          We are open to suggestions and feedback and willing to share our expertise in mental,
+          wellness and productivity.
         </p>
         <div className={styles.team__members}>
           <div className={styles.team__member}>
@@ -31,7 +32,7 @@ export default function Team() {
               picture={'/photos/sergey.png'}
               picture2={'/photos/sergey@2x.png'}
               name={'Sergey Elushev'}
-              description={'Sergey Elushev'}
+              description={'Co-Founder & Development'}
             />
             <div className={styles.team__icons}>
               <Icon

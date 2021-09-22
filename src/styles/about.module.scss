@@ -13,7 +13,7 @@
   width: 100%;
   height: 123px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   margin: 68px 190px 0;
 
   @include mediaMaxL {
@@ -28,8 +28,97 @@
   }
 
   @include mediaMaxXS {
-    max-width: 330px;
+    max-width: 400px;
+    width: auto;
     height: 140px;
-    margin: 16px auto 0;
+    margin: 16px 15px 0;
+  }
+}
+
+.about__head {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mediaMaxL {
+    height: 32px;
+  }
+
+  @include mediaMaxXS {
+    height: 28px;
+  }
+}
+
+.about__buttonContainer {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 95px 190px 260px;
+
+  @include mediaMaxL {
+    max-width: 1120px;
+    margin: 95px auto 110px;
+  }
+
+  @include mediaMaxM {
+    max-width: 864px;
+    margin-bottom: 60px;
+  }
+
+  @include mediaMaxXS {
+    max-width: 400px;
+    margin: 67px 15px 149px;
+  }
+}
+.about__buttonText {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+
+  @include mediaMaxXS {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.about__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 70px;
+  margin-top: 34px;
+  background: #e83755;
+  border-radius: 50px;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  text-decoration: none;
+
+  @include mediaMaxXS {
+    width: 177px;
+    height: 58px;
+    font-size: 16px;
+  }
+
+  &:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
+}
+
+.about__buttonPicture {
+  width: 19px;
+  height: 19px;
+  margin-left: 10px;
+
+  @include mediaMaxXS {
+    width: 12px;
+    height: 12px;
   }
 }

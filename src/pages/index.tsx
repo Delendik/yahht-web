@@ -16,7 +16,7 @@ function Home() {
     setSuccess(false)
   }
 
-  const handleClickSuccess = () => {
+  const handleSuccess = () => {
     setSuccess(!success)
     setShow(true)
   }
@@ -49,7 +49,7 @@ function Home() {
       <Breathhh click={handleClick} />
       <Lassie />
       <Footer click={handleClick} />
-      <Popup success={success} show={show} click={handleClick} clickSuccess={handleClickSuccess} />
+      <Popup success={success} show={show} click={handleClick} clickSuccess={handleSuccess} />
     </div>
   )
 }

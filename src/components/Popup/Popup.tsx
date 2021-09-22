@@ -14,8 +14,8 @@ interface PopupProps {
 
 const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => {
   const [value, setValue] = useState('')
-  const [error, setError] = useState('Input email')
-  const [valid, setValid] = useState(false)
+  const [error, setError] = useState('')
+  const [valid, setValid] = useState(true)
 
   const handleSubmit = () => {
     clickSuccess()
@@ -37,16 +37,22 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
 
   const handleChange = (e) => {
     setValue(e.currentTarget.value)
+  }
+
+  const checkValid = (e) => {
     const re =
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    if (!re.test(String(e.currentTarget.value).toLowerCase())) {
+    if (!re.test(String(value).toLowerCase())) {
       setError('Incorrect email')
       setValid(false)
+      e.preventDefault()
     } else {
+      handleSubmit()
       setError('')
       setValid(true)
     }
   }
+
   return (
     <div className={showPopup}>
       {!success && (
@@ -66,21 +72,9 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
           ></input>
           {error && <label className={styles.popup__label}>{error}</label>}
           <form action="">
-            {!valid && (
-              <button
-                type="submit"
-                className={styles.lassie__button}
-                onClick={handleSubmit}
-                disabled
-              >
-                Submit request
-              </button>
-            )}
-            {valid && (
-              <button type="submit" className={styles.lassie__button} onClick={handleSubmit}>
-                Submit request
-              </button>
-            )}
+            <button type="submit" className={styles.lassie__button} onClick={checkValid}>
+              Submit request
+            </button>
           </form>
           <button type="button" onClick={click}>
             <img
