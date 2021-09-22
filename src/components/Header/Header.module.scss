@@ -183,10 +183,11 @@
 
   @include mediaMaxXS {
     position: absolute;
-    right: 40px;
+    right: 45px;
     width: 20px;
     height: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    padding-bottom: 8px;
   }
 }
 

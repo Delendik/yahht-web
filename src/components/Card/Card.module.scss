@@ -28,6 +28,10 @@
   font-size: 16px;
   line-height: 28px;
   color: #000000;
+
+  @include mediaMaxXS {
+    margin-top: 18px;
+  }
 }
 
 .cart__subtitle {

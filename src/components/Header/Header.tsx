@@ -93,12 +93,14 @@ export default function Header() {
         </div>
 
         <Link href="/about">
-          <a className={styles.header__link}>
-            We create digital products that
-            <br />
-            help people take care of themselves
+          <div className={styles.header__link}>
+            <p>
+              We create digital products that
+              <br />
+              help people take care of themselves
+            </p>
             <div className={styles.header__linkIcon} />
-          </a>
+          </div>
         </Link>
 
         <div className={styles.header__hashtags}>

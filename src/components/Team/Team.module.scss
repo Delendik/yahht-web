@@ -62,12 +62,26 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 68px 20px;
+  grid-gap: 68px 20px;
   margin-top: 96px;
+  margin-right: -20px;
 
   @include mediaMaxL {
     margin-top: 68px;
   }
 }
+
+// @supports not (gap: 68px 20px) {
+//   .team__members {
+//     margin: -0.5em;
+//   }
+//   .team__members > * {
+//     margin: 0.5em;
+//   }
+// }
+// .team__members > * {
+//   margin-right: 20px;
+// }
 
 .team__icons {
   display: flex;

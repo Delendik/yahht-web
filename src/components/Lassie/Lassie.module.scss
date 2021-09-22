@@ -102,9 +102,13 @@
   }
 
   @include mediaMaxXS {
-    width: 328px;
+    width: 275px;
     margin-top: 16px;
     font-size: 18px;
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -120,6 +124,7 @@
   font-size: 28px;
   line-height: 140%;
   letter-spacing: -0.01em;
+  font-weight: 500;
   color: #070918;
 
   @include mediaMaxL {
