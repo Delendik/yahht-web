@@ -92,7 +92,7 @@ const Popup: React.FC<PopupProps> = ({ success, show, click, clickSuccess }) => 
       {success && (
         <div className={styles.popup__popupSuccess}>
           <p className={styles.popup__title}>Success!</p>
-          <p className={styles.popup__subtitle}>
+          <p className={styles.popup__subtitleSuccess}>
             We've received your request.
             <br />
             Expect an invitation by email.

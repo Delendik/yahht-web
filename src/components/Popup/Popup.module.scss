@@ -29,11 +29,14 @@
 
   @include mediaMaxXS {
     max-width: 400px;
+    box-sizing: border-box;
     width: calc(100% - 30px);
     height: 442px;
     margin-top: -221px;
     margin-left: 15px;
     margin-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
     left: 0;
   }
 }
@@ -54,10 +57,13 @@
   color: #000000;
 
   @include mediaMaxXS {
-    width: 300px;
-    height: 230px;
-    margin-top: -115px;
-    margin-left: -150px;
+    max-width: 400px;
+    width: calc(100% - 30px);
+    height: 300px;
+    margin-top: -155px;
+    margin-left: 15px;
+    margin-right: 15px;
+    left: 0;
   }
 }
 
@@ -89,6 +95,22 @@
   }
 }
 
+.popup__subtitleSuccess {
+  width: 330px;
+  margin-top: 25px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  opacity: 0.7;
+
+  @include mediaMaxXS {
+    width: 300px;
+    margin-top: 19px;
+    font-size: 18px;
+  }
+}
+
 .popup__label {
   height: 18px;
   margin-left: 110px;
@@ -114,7 +136,8 @@
   color: #000000;
 
   @include mediaMaxXS {
-    width: 315px;
+    max-width: 315px;
+    width: 100%;
     margin-top: 34px;
     font-size: 16px;
   }
@@ -168,9 +191,7 @@
   color: #ffffff;
 
   @include mediaMaxXS {
-    height: 40px;
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 40px;
   }
 
   &:hover {
