@@ -7,13 +7,13 @@
   background-color: rgba(0, 0, 0, 0.65);
   opacity: 1;
   visibility: visible;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .popup__hide {
   visibility: hidden;
   opacity: 0;
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .popup__popup {
