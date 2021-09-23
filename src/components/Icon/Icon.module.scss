@@ -1,0 +1,12 @@
+.icon__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

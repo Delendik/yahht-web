@@ -1,0 +1,34 @@
+$xlBreak: 1920px;
+$lBreak: 1440px;
+$mBreak: 1320px;
+$sBreak: 768px;
+$xsBreak: 430px;
+
+@mixin mediaMaxXL {
+  @media (max-width: $xlBreak) {
+    @content;
+  }
+}
+
+@mixin mediaMaxL {
+  @media (max-width: $lBreak) {
+    @content;
+  }
+}
+
+@mixin mediaMaxM {
+  @media (max-width: $mBreak) {
+    @content;
+  }
+}
+
+@mixin mediaMaxS {
+  @media (max-width: $sBreak) {
+    @content;
+  }
+}
+@mixin mediaMaxXS {
+  @media (max-width: $xsBreak) {
+    @content;
+  }
+}

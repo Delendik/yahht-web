@@ -1,0 +1,42 @@
+@import '../../styles/_variables';
+
+.card__avatar {
+  width: 370px;
+  height: 370px;
+  border-radius: 24px;
+
+  @include mediaMaxL {
+    width: 265px;
+    height: 265px;
+  }
+
+  @include mediaMaxM {
+    width: 274px;
+    height: 274px;
+    border-radius: 16px;
+  }
+
+  @include mediaMaxXS {
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;
+    border-radius: 24px;
+  }
+}
+
+.cart__title {
+  margin-top: 24px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+
+  @include mediaMaxXS {
+    margin-top: 18px;
+  }
+}
+
+.cart__subtitle {
+  font-size: 16px;
+  line-height: 28px;
+}
