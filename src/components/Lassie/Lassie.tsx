@@ -11,17 +11,19 @@ export default function Lassie() {
             <br />
             and quit the bad habit in 14-17 days
           </p>
-          <form action="https://lassie.yahht.com/" target="_blank">
-            <button className={styles.lassie__button}>
-              How it works
-              <img
-                className={styles.lassie__buttonPicture}
-                width="20"
-                height="20"
-                alt="arrow"
-                src="/icon-arrow-black.svg"
-              />
-            </button>
+          <form
+            action="https://lassie.yahht.com/"
+            className={styles.lassie__button}
+            target="_blank"
+          >
+            How it works
+            <img
+              className={styles.lassie__buttonPicture}
+              width="20"
+              height="20"
+              alt="arrow"
+              src="/icon-arrow-black.svg"
+            />
           </form>
         </div>
         <div className={styles.lassie__picture}></div>
