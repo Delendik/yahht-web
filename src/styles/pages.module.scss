@@ -1,0 +1,96 @@
+@import "./_variables";
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.page__title {
+  font-family: Drukwide;
+  font-size: 124px;
+  line-height: 100%;
+
+  @include mediaMaxS {
+    font-size: 60px;
+  }
+}
+
+.page__subtitle {
+  margin-top: 48px;
+  font-family: Drukwide;
+  font-size: 40px;
+  line-height: 100%;
+
+  @include mediaMaxS {
+    font-size: 30px;
+  }
+}
+
+.page__text {
+  margin-top: 16px;
+  max-width: 816px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  z-index: 1;
+
+  @include mediaMaxS {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.page__mail {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page__button {
+  margin-top: 48px;
+  width: 348px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $secondary-color;
+  font-size: 28px;
+  line-height: 100%;
+  background-color: transparent;
+  border: 4px solid $secondary-color;
+  box-sizing: border-box;
+  border-radius: 300px;
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+    color: #d629eb;
+    border-color: #d629eb;
+  }
+}
+
+.page__footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  max-width: 1980px;
+}
+
+.page__image {
+  width: 96px;
+  height: 96px;
+}
+
+.page__info {
+  margin-top: 34px;
+  color: $secondary-color;
+  font-family: Drukwide;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+}
