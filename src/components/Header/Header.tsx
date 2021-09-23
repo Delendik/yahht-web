@@ -95,7 +95,7 @@ export default function Header() {
         <Link href="/about">
           <div className={styles.header__link}>
             <p>
-              We create digital products that&ensp;
+              We create digital products that&nbsp;
               <br />
               help people take care of themselves
             </p>
