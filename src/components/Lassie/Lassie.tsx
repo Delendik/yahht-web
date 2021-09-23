@@ -7,7 +7,7 @@ export default function Lassie() {
         <div className={styles.lassie__about}>
           <h2 className={styles.lassie__title}>Lassie Smoke</h2>
           <p className={styles.lassie__subtitle}>
-            Increase the intervals between smoking&ensp;
+            Increase the intervals between smoking&nbsp;
             <br />
             and quit the bad habit in 14-17 days
           </p>
