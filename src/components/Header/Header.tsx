@@ -99,7 +99,13 @@ export default function Header() {
               <br />
               help people take care of themselves
             </p>
-            <div className={styles.header__linkIcon} />
+            <svg
+              viewBox="0 0 41 41"
+              xmlns="http://www.w3.org/2000/svg"
+              className={styles.header__linkIcon}
+            >
+              <path d="M8.08315 0.662476H40.0877V32.667H34.412V10.3515L4.25647 40.507L0.243164 36.4937L30.3987 6.33815H8.08315V0.662476Z" />
+            </svg>
           </div>
         </Link>
 
