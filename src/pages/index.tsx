@@ -20,30 +20,36 @@ function Home() {
     setSuccess(!success)
     setShow(true)
   }
-
   return (
     <div className={styles.page}>
       <YMInitializer accounts={[79520590]} />
       <Head>
-        <title>Yahht - Software development</title>
+        <title>Yahht - Digital product development team</title>
         <meta
           name="description"
-          content="A team of independent developers creating digital products"
+          content="We create digital products that help people take care of themselves. We are open to suggestions and feedback and willing to share our expertise in mental, wellness and productivity."
         />
+        <meta name="author" content="Yahht" />
+        <meta name="twitter:image:alt" content="Yahht - Digital product development team" />
         <meta
           name="keywords"
-          content="Yahht, Breathhh, Lassie Smoke, Alpaca, Tabula Rasa, Slang Shuffle, Weather forecast"
+          content="Yahht, Team, Digital, Products, Breathhh, Alpaca, Lassie Smoke, Bot, API, Development, Mental, Wellness, Health, Productivity, Extension, Bot, Chatbot, Websites"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Head>
+        <meta property="profile:username" content="yahht_team"></meta>
+        <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_GB" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Yahht" />
-        <meta property="og:image" content="meta-img.png" />
         <meta property="og:site_name" content="Yahht" />
-        <meta property="og:image" content="https://yahht-web.vercel.app/opengraph.png" />
-        <meta property="og:url" content="https://yahht.com/" />
+        <meta property="og:title" content="Yahht Team" />
+        <meta
+          property="og:description"
+          content="We create digital products that help people take care of themselves. We are open to suggestions and feedback and willing to share our expertise in mental, wellness and productivity."
+        />
+        <meta property="og:url" content="https://yahht.com" />
+
+        <meta property="og:image" content="https://yahht.com/opengraph.png" />
       </Head>
       <Header />
       <Breathhh click={handleClick} />

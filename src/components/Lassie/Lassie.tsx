@@ -11,11 +11,7 @@ export default function Lassie() {
             <br />
             and quit the bad habit in 14-17 days
           </p>
-          <form
-            action="https://lassie.yahht.com/"
-            className={styles.lassie__button}
-            target="_blank"
-          >
+          <a href="https://lassie.yahht.com/" className={styles.lassie__button} target="_blank">
             How it works
             <img
               className={styles.lassie__buttonPicture}
@@ -24,7 +20,7 @@ export default function Lassie() {
               alt="arrow"
               src="/icon-arrow-black.svg"
             />
-          </form>
+          </a>
         </div>
         <div className={styles.lassie__picture}></div>
       </div>

@@ -18,7 +18,7 @@ export default function Team() {
               picture={'/photos/kostya.png'}
               picture2={'/photos/kostya@2x.png'}
               name={'Kostya Shirshov'}
-              description={'Co-Founder & Management'}
+              description={'Team Lead & Management'}
             />
             <div className={styles.team__icons}>
               <Icon picture={'/telegram.svg'} link={'https://t.me/kshirshov'} />
@@ -32,7 +32,7 @@ export default function Team() {
               picture={'/photos/sergey.png'}
               picture2={'/photos/sergey@2x.png'}
               name={'Sergey Elushev'}
-              description={'Co-Founder & Development'}
+              description={'Team Lead & Development'}
             />
             <div className={styles.team__icons}>
               <Icon
