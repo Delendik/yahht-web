@@ -8,9 +8,14 @@
   flex-direction: column;
 }
 
-.about__container {
+.about__main {
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.about__container {
+  max-width: 1920px;
   height: 123px;
   display: flex;
   justify-content: space-between;
@@ -51,9 +56,14 @@
   }
 }
 
-.about__buttonContainer {
+.about__buttonMain {
   max-width: 1920px;
   width: 100%;
+  margin: 0 auto;
+}
+
+.about__buttonContainer {
+  max-width: 1920px;
   display: flex;
   flex-direction: column;
   margin: 95px 190px 260px;
