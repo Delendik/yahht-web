@@ -1,9 +1,11 @@
 @import '../../styles/_variables';
 
 .lassie__main {
+  box-sizing: border-box;
   max-width: 4000px;
   width: 100%;
   padding-left: 190px;
+  padding-right: 190px;
   background-color: #070918;
   border-radius: 40px 40px 0px 0px;
   margin-top: -40px;
@@ -21,6 +23,7 @@
   height: 900px;
   display: flex;
   margin: 68px auto 0;
+  justify-content: space-between;
 
   @include mediaMaxL {
     max-width: 1120px;
@@ -168,7 +171,7 @@
 .lassie__picture {
   width: 761px;
   height: 792px;
-  margin-left: 65px;
+  margin-right: 64px;
   margin-top: 68px;
   background-image: url('../../../public/illustrate-lassie-smoke@2x.png');
   background-size: contain;
@@ -177,7 +180,7 @@
   @include mediaMaxL {
     width: 550px;
     height: 597px;
-    margin-left: 20px;
+    margin-right: 0;
     margin-top: 63px;
   }
 

@@ -1,8 +1,8 @@
 $xlBreak: 1920px;
-$lBreak: 1440px;
+$lBreak: 1720px;
 $mBreak: 1320px;
 $sBreak: 768px;
-$xsBreak: 430px;
+$xsBreak: 900px;
 
 @mixin mediaMaxXL {
   @media (max-width: $xlBreak) {
