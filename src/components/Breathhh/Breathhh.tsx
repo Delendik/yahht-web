@@ -29,7 +29,7 @@ const Breathhh: React.FC<BreathhhProps> = ({ click }) => {
           className={styles.breathhh__picture}
           width="615"
           height="615"
-          alt="arrow"
+          alt="illustrate"
           src="/illustrate-project-x.png"
           srcSet="/illustrate-project-x@2x.png 2x"
         />

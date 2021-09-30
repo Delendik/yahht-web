@@ -1,9 +1,11 @@
 @import '../../styles/_variables';
 
 .breathhh__main {
+  box-sizing: border-box;
   max-width: 4000px;
   width: 100%;
   padding-left: 190px;
+  padding-right: 190px;
   background-color: #ffffff;
   border-radius: 40px 40px 0px 0px;
   margin-top: -40px;
@@ -21,6 +23,7 @@
   height: 900px;
   display: flex;
   margin: 68px auto 0;
+  justify-content: space-between;
 
   @include mediaMaxL {
     max-width: 1120px;
@@ -34,6 +37,7 @@
     margin: 50px auto 0;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
   }
 
   @include mediaMaxXS {
@@ -81,7 +85,7 @@
 
 .breathhh__subtitle {
   margin-top: 34px;
-  width: 760px;
+  width: 650px;
   font-size: 34px;
   line-height: 46px;
   letter-spacing: -0.01em;
@@ -162,13 +166,13 @@
 .breathhh__picture {
   width: 615px;
   height: 615px;
-  margin-left: 93px;
   margin-top: 123px;
+  margin-right: 72px;
 
   @include mediaMaxL {
     width: 451px;
     height: 451px;
-    margin-left: 67px;
+    margin-right: 50px;
     margin-top: 105px;
   }
 
