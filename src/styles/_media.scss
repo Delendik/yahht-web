@@ -1,7 +1,6 @@
 $xlBreak: 1920px;
 $lBreak: 1720px;
 $mBreak: 1320px;
-$sBreak: 768px;
 $xsBreak: 900px;
 
 @mixin mediaMaxXL {
@@ -22,13 +21,38 @@ $xsBreak: 900px;
   }
 }
 
-@mixin mediaMaxS {
-  @media (max-width: $sBreak) {
-    @content;
-  }
-}
 @mixin mediaMaxXS {
   @media (max-width: $xsBreak) {
     @content;
+  }
+}
+
+
+$container-wide-width: 1540px;
+$container-base-width: 1120px;
+$container-compact-width: 864px;
+$container-mobile-width: 330px;
+
+
+@mixin contentContainer {
+  $pad: 20px;
+
+  max-width: $container-wide-width + ($pad * 2);
+  width: 100%;
+  padding-left: $pad;
+  padding-right: $pad;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mediaMaxXL {
+    max-width: $container-base-width + ($pad * 2);
+  }
+
+  @include mediaMaxL {
+    max-width: $container-compact-width + ($pad * 2);
+  }
+
+  @include mediaMaxM {
+    max-width: $container-mobile-width + ($pad * 2);
   }
 }
