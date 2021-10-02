@@ -101,10 +101,9 @@
   @include mediaMaxXS {
     margin-top: 16px;
     font-size: 18px;
-
-    br {
-      display: none;
-    }
+    max-width: 328px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -188,12 +187,17 @@
   }
 
   @include mediaMaxL {
+    width: 380px;
   }
 
   @include mediaMaxM {
-    background-image: url('../../../public/illustrate-lassie-smoke.png');
-    width: 653px;
-    height: 522px;
+    width: 864px;
+    height: 552px;
+    background-image: url('../../../public/illustrate-lassie-smoke-compact.png');
+    background-image: image-set(
+      url('../../../public/illustrate-lassie-smoke-compact.png') 1x,
+      url('../../../public/illustrate-lassie-smoke-compact@2x.png') 2x,
+    );
   }
 
   @include mediaMaxXS {

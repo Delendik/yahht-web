@@ -9,7 +9,7 @@ export default function Lassie() {
           <div className={styles.lassie__about}>
             <h2 className={styles.lassie__title}>Lassie Smoke</h2>
             <p className={styles.lassie__subtitle}>
-              Increase the intervals between smoking and quit the bad habit in 14-17 days
+              Increase the intervals between smoking and quit the bad habit in&nbsp;14&#8209;17 days
             </p>
             <a href="https://lassie.yahht.com/" className={styles.lassie__button} target="_blank">
               How it works
