@@ -22,30 +22,42 @@ const Footer: React.FC<FooterProps> = ({ click }) => {
           </Link>
           <div className={styles.footer__projects}>
             <div className={styles.footer__projectsColumn}>
-              <Link href="/about">
-                <a className={styles.footer__link}>About</a>
-              </Link>
-              <a target="_blank" href="https://medium.com/@yahht" className={styles.footer__link}>
-                Medium
-              </a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/YahhtTeam"
-                className={styles.footer__link}
-              >
-                Facebook
-              </a>
+              <div className={styles.footer__linkWrap}>
+                <Link href="/about">
+                  <a className={styles.footer__link}>About</a>
+                </Link>
+              </div>
+              <div className={styles.footer__linkWrap}>
+                <a target="_blank" href="https://medium.com/@yahht" className={styles.footer__link}>
+                  Medium
+                </a>
+              </div>
+              <div className={styles.footer__linkWrap}>
+                <a
+                  target="_blank"
+                  href="https://www.facebook.com/YahhtTeam"
+                  className={styles.footer__link}
+                >
+                  Facebook
+                </a>
+              </div>
             </div>
             <div className={styles.footer__projectsColumn}>
-              <p className={styles.footer__link} onClick={click}>
-                Project X
-              </p>
-              <a target="_blank" href="https://lassie.yahht.com/" className={styles.footer__link}>
-                Lassie Smoke
-              </a>
-              <a target="_blank" href="https://alpaca.yahht.com/" className={styles.footer__link}>
-                Alpaca
-              </a>
+              <div className={styles.footer__linkWrap}>
+                <p className={styles.footer__link} onClick={click}>
+                  Project X
+                </p>
+              </div>
+              <div className={styles.footer__linkWrap}>
+                <a target="_blank" href="https://lassie.yahht.com/" className={styles.footer__link}>
+                  Lassie Smoke
+                </a>
+              </div>
+              <div className={styles.footer__linkWrap}>
+                <a target="_blank" href="https://alpaca.yahht.com/" className={styles.footer__link}>
+                  Alpaca
+                </a>
+              </div>
             </div>
           </div>
         </div>
