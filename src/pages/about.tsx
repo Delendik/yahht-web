@@ -54,7 +54,7 @@ function About() {
           <TopHead />
         </Container>
         <Team />
-        <div className={styles.about__buttonMain}>
+        <Container>
           <div className={styles.about__buttonContainer}>
             <p className={styles.about__buttonText}>Let’s do great things together!</p>
             <a className={styles.about__button} href="mailto:mail@yahht.com?subject=Join Team">
@@ -68,7 +68,7 @@ function About() {
               />
             </a>
           </div>
-        </div>
+        </Container>
         <Footer click={handleClick} />
         <Popup
           success={success}

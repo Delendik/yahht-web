@@ -39,26 +39,19 @@
 }
 
 .about__buttonContainer {
-  max-width: 1920px;
   display: flex;
   flex-direction: column;
-  margin: 95px 190px 260px;
+  margin: 95px 0 260px;
 
   @include mediaMaxL {
-    max-width: 1120px;
-    margin: 95px auto 110px;
-  }
-
-  @include mediaMaxM {
-    max-width: 864px;
-    margin-bottom: 60px;
+    margin: 95px 0 110px;
   }
 
   @include mediaMaxXS {
-    max-width: 400px;
-    margin: 67px 15px 149px;
+    margin: 67px 0 149px;
   }
 }
+
 .about__buttonText {
   font-weight: 500;
   font-size: 28px;
