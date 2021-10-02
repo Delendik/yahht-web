@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
 import Team from '../components/Team/Team'
+import TopHead from '../components/TopHead/TopHead'
+import Container from '../components/Container/Container'
 import Footer from '../components/Footer/Footer'
 import Popup from '../components/Popup/Popup'
 import styles from '../styles/about.module.scss'
@@ -20,7 +21,7 @@ function About() {
   }
 
   return (
-    <div className={styles.page}>
+    <>
       <Head>
         <title>Yahht - About</title>
         <meta
@@ -34,8 +35,7 @@ function About() {
           content="Yahht, Team, Digital, Products, Breathhh, Alpaca, Lassie Smoke, Bot, API, Development, Mental, Wellness, Health, Productivity, Extension, Bot, Chatbot, Websites"
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Head>
+
         <meta property="profile:username" content="yahht_team"></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_GB" />
@@ -46,44 +46,38 @@ function About() {
           content="We create digital products that help people take care of themselves. We are open to suggestions and feedback and willing to share our expertise in mental, wellness and productivity."
         />
         <meta property="og:url" content="https://yahht.com" />
-
         <meta property="og:image" content="https://yahht.com/opengraph.png" />
       </Head>
-      <div className={styles.about__main}>
-        <div className={styles.about__container}>
-          <Link href="/">
-            <img
-              className={styles.header__picture}
-              width="180"
-              height="45"
-              alt="yahht logo"
-              src="/logotype-yahht.svg"
-            />
-          </Link>
-          <a className={styles.header__button} href="mailto:mail@yahht.com">
-            Contact Us
-          </a>
+
+      <div className={styles.page}>
+        <Container>
+          <TopHead />
+        </Container>
+        <Team />
+        <div className={styles.about__buttonMain}>
+          <div className={styles.about__buttonContainer}>
+            <p className={styles.about__buttonText}>Let’s do great things together!</p>
+            <a className={styles.about__button} href="mailto:mail@yahht.com?subject=Join Team">
+              Join the team
+              <img
+                className={styles.about__buttonPicture}
+                width="20"
+                height="20"
+                alt="arrow"
+                src="/icon-arrow.svg"
+              />
+            </a>
+          </div>
         </div>
+        <Footer click={handleClick} />
+        <Popup
+          success={success}
+          show={show}
+          click={handleClick}
+          clickSuccess={handleClickSuccess}
+        />
       </div>
-      <Team />
-      <div className={styles.about__buttonMain}>
-        <div className={styles.about__buttonContainer}>
-          <p className={styles.about__buttonText}>Let’s do great things together!</p>
-          <a className={styles.about__button} href="mailto:mail@yahht.com?subject=Join Team">
-            Join the team
-            <img
-              className={styles.about__buttonPicture}
-              width="20"
-              height="20"
-              alt="arrow"
-              src="/icon-arrow.svg"
-            />
-          </a>
-        </div>
-      </div>
-      <Footer click={handleClick} />
-      <Popup success={success} show={show} click={handleClick} clickSuccess={handleClickSuccess} />
-    </div>
+    </>
   )
 }
 

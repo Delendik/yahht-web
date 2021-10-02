@@ -1,0 +1,47 @@
+@import '../../styles/_variables';
+
+.topHead {
+  display: flex;
+  width: 100%;
+  padding-top: 47px;
+  padding-bottom: 47px;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mediaMaxXS {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: flex-start;
+  }
+}
+
+.topHead__picture {
+  width: 180px;
+  height: 45px;
+  object-fit: contain;
+
+  @include mediaMaxL {
+    width: 128px;
+    height: 32px;
+  }
+
+  @include mediaMaxXS {
+    width: 114px;
+    height: 28px;
+  }
+}
+
+.topHead__link {
+  font-size: 26px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #003456;
+
+  &:hover {
+    color: #e83755;
+  }
+
+  @include mediaMaxL {
+    font-size: 18px;
+  }
+}

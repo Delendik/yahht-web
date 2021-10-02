@@ -1,7 +1,7 @@
 $xlBreak: 1920px;
-$lBreak: 1720px;
+$lBreak: 1440px;
 $mBreak: 1320px;
-$xsBreak: 900px;
+$xsBreak: 900px; // ?? нет такого в макетах
 
 @mixin mediaMaxXL {
   @media (max-width: $xlBreak) {
@@ -37,7 +37,7 @@ $container-mobile-width: 330px;
 @mixin contentContainer {
   $pad: 20px;
 
-  max-width: $container-wide-width + ($pad * 2);
+  max-width: $container-wide-width;
   width: 100%;
   padding-left: $pad;
   padding-right: $pad;
@@ -45,14 +45,15 @@ $container-mobile-width: 330px;
   margin-right: auto;
 
   @include mediaMaxXL {
-    max-width: $container-base-width + ($pad * 2);
+    max-width: $container-base-width;
   }
 
   @include mediaMaxL {
-    max-width: $container-compact-width + ($pad * 2);
+    max-width: $container-compact-width;
   }
 
   @include mediaMaxM {
-    max-width: $container-mobile-width + ($pad * 2);
+    max-width: none;
+    width: auto;
   }
 }

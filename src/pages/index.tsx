@@ -21,8 +21,7 @@ function Home() {
     setShow(true)
   }
   return (
-    <div className={styles.page}>
-      <YMInitializer accounts={[79520590]} />
+    <>
       <Head>
         <title>Yahht - Digital product development team</title>
         <meta
@@ -36,8 +35,7 @@ function Home() {
           content="Yahht, Team, Digital, Products, Breathhh, Alpaca, Lassie Smoke, Bot, API, Development, Mental, Wellness, Health, Productivity, Extension, Bot, Chatbot, Websites"
         />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Head>
+
         <meta property="profile:username" content="yahht_team"></meta>
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_GB" />
@@ -51,12 +49,15 @@ function Home() {
 
         <meta property="og:image" content="https://yahht.com/opengraph.png" />
       </Head>
-      <Header />
-      <Breathhh click={handleClick} />
-      <Lassie />
-      <Footer click={handleClick} />
-      <Popup success={success} show={show} click={handleClick} clickSuccess={handleSuccess} />
-    </div>
+      <div className={styles.page}>
+        <YMInitializer accounts={[79520590]} />
+        <Header />
+        <Breathhh click={handleClick} />
+        <Lassie />
+        <Footer click={handleClick} />
+        <Popup success={success} show={show} click={handleClick} clickSuccess={handleSuccess} />
+      </div>
+    </>
   )
 }
 

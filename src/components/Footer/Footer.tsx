@@ -11,14 +11,16 @@ const Footer: React.FC<FooterProps> = ({ click }) => {
       <div className={styles.footer__container}>
         <div className={styles.footer__part}>
           <Link href="/">
-            <img
-              className={styles.footer__label}
-              width="68"
-              height="68"
-              alt="arrow"
-              src="/emblem-yahht.png"
-              srcSet="/emblem-yahht@2x.png 2x"
-            />
+            <a>
+              <img
+                className={styles.footer__label}
+                width="68"
+                height="68"
+                alt="arrow"
+                src="/emblem-yahht.png"
+                srcSet="/emblem-yahht@2x.png 2x"
+              />
+            </a>
           </Link>
           <div className={styles.footer__projects}>
             <div className={styles.footer__projectsColumn}>
@@ -44,9 +46,9 @@ const Footer: React.FC<FooterProps> = ({ click }) => {
             </div>
             <div className={styles.footer__projectsColumn}>
               <div className={styles.footer__linkWrap}>
-                <p className={styles.footer__link} onClick={click}>
+                <span className={styles.footer__link} onClick={click}>
                   Project X
-                </p>
+                </span>
               </div>
               <div className={styles.footer__linkWrap}>
                 <a target="_blank" href="https://lassie.yahht.com/" className={styles.footer__link}>

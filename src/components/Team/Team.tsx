@@ -1,11 +1,12 @@
 import Card from '../Card/Card'
 import Icon from '../Icon/Icon'
+import Container from '../Container/Container'
 import styles from './Team.module.scss'
 
 export default function Team() {
   return (
-    <div className={styles.team__main}>
-      <div className={styles.team__container}>
+    <Container>
+      <div>
         <p className={styles.team__title}>Team</p>
         <p className={styles.team__subtitle}>
           We are committed to creating and supporting products that help you take care of yourself.
@@ -148,6 +149,6 @@ export default function Team() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
