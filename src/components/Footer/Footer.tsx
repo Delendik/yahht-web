@@ -43,17 +43,17 @@ const Footer: React.FC<FooterProps> = ({ click }) => {
                 <div className={styles.footer__linkWrap}>
                   <a
                     target="_blank"
-                    href="https://www.facebook.com/YahhtTeam"
+                    href="https://www.linkedin.com/company/74047264"
                     className={styles.footer__link}
                   >
-                    Facebook
+                    LinkedIn
                   </a>
                 </div>
               </div>
               <div className={styles.footer__projectsColumn}>
                 <div className={styles.footer__linkWrap}>
                   <span className={styles.footer__link} onClick={click}>
-                    Project X
+                    Breathhh
                   </span>
                 </div>
                 <div className={styles.footer__linkWrap}>
