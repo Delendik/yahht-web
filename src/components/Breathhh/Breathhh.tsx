@@ -11,7 +11,7 @@ const Breathhh: React.FC<BreathhhProps> = ({ click }) => {
       <Container>
         <div className={styles.breathhh__container}>
           <div className={styles.breathhh__about}>
-            <h2 className={styles.breathhh__title}>Project X</h2>
+            <h2 className={styles.breathhh__title}>Breathhh</h2>
             <p className={styles.breathhh__subtitle}>
               A neural network to keep a cool head
               <br /> and reduce stress during the day
