@@ -9,8 +9,15 @@
     padding: 0;
   }
 
+  @include mediaMaxM {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+  
   @include mediaMaxXS {
     border-radius: 34px 34px 0px 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -97,6 +104,10 @@
     margin-left: 442px;
   }
 
+  @media (max-width: 1140px) {
+    margin-left: 300px;
+  }
+
   @include mediaMaxXS {
     margin: 0 auto;
     flex-direction: column;
@@ -124,6 +135,8 @@
 
   @include mediaMaxXS {
     margin-bottom: 28px;
+    display: flex;
+    justify-content: center;
 
     &:first-child {
       margin-top: 34px;
@@ -193,6 +206,10 @@
     margin-left: 214px;
   }
 
+  @media (max-width: 1140px) {
+    margin-left: 70px;
+  }
+  
   @include mediaMaxXS {
     margin: 0;
     text-align: center;
