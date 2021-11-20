@@ -81,6 +81,14 @@ export default function Header() {
             src="/anna.png"
             srcSet="/anna@2x.png 2x"
           />
+          <img
+            className={styles.header__avatar}
+            width="80"
+            height="80"
+            alt="avatar"
+            src="/pavel.png"
+            srcSet="/pavel@2x.png 2x"
+          />
         </div>
 
         <div className={styles.header__textBlock}>
