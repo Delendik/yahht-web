@@ -7,6 +7,7 @@ import Lassie from '../components/Lassie/Lassie'
 import Footer from '../components/Footer/Footer'
 import styles from '../styles/index.module.scss'
 import Popup from '../components/Popup/Popup'
+import Pixel from '../components/Pixel/Pixel'
 
 function Home() {
   const [show, setShow] = useState(false)
@@ -49,6 +50,7 @@ function Home() {
 
         <meta property="og:image" content="https://yahht.com/opengraph.png" />
       </Head>
+      <Pixel name="FACEBOOK_PIXEL_1" />
       <div className={styles.page}>
         <YMInitializer accounts={[79520590]} />
         <Header />
