@@ -3,7 +3,7 @@ import Container from '../Container/Container'
 import styles from './Footer.module.scss'
 
 interface FooterProps {
-  click: () => void
+  click?: () => void
 }
 
 const Footer: React.FC<FooterProps> = ({ click }) => {
